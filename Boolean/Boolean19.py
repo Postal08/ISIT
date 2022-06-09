@@ -1,0 +1,10 @@
+import random
+x1,x2 = sorted(random.sample(range(-10, 11), 2))
+y2,y1 = sorted(random.sample(range(-10, 11), 2))
+x = random.randrange(-10,11)
+y = random.randrange(-10,11)
+b = (x1 < x) and (x < x2) and (y2 < y) and (y < y1)
+print("Вершина (x1, y1): ({0},{1})".format(x1, y1))
+print("Вершина (x2, y2): ({0},{1})".format(x2, y2))
+print("Точка (x, y): ({0},{1})".format(x, y))
+print("Точка лежит внутри прямоугольника: ",b)
